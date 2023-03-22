@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="payment-form.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="card">
+        <h1>Send us your feedback!<i class="fa fa-times"></i></h1>
+        <form action="/feedback.html" method="POST">
+            <section>
+                <label for="reason">Did you achieve your goal?</label>
+                <br>
+                <article class="option1">
+                <input type="checkbox" name="achieve" id="yes" value="yes">
+                <div>
+                    <span>
+                        Yes
+                    </span>
+                </div>
+            </article>
+            <article class="option2">
+                <input type="checkbox" name="achieve" id="partially" value="partially">
+                <div>
+                    <span>
+                        Partially
+                    </span>
+                </div>
+            </article>
+            <article class="option3">
+                <input type="checkbox" name="achieve" id="no" value="no">
+                <div>
+                    <span>
+                        No
+                    </span>
+                </div>
+            </article>
+        </section>
+           <section>
+                <label for="reason" class="reason">What was the reason for your visit?</label>
+                <br>
+                <select id="reason" name="reason">
+                    <option value="query">Product Query</option>
+                    <option value="pricelist">Pricelist Request</option>
+                    <option value="issue">Product Issue</option>
+                </select>
+            
+                <label for="reason">What was the reason why you couldn't achieve your goal?</label>
+                <br>
+                <select id="reason" name="reason">
+                    <option value="form">The form doesn't work well</option>
+                    <option value="buttons">The buttons do not work well</option>
+                    <option value="quality">Poor quality</option>
+                </select>
+            
+           
+                <label for="suggestions">Do you have any suggestions to make our website better?</label>
+                <textarea id="suggestions" name="suggestions" rows="3" cols="50"></textarea>
+           
+
+                <input type="submit" value="Submit">
+            </section>   
+        
+        </form>
+        </div>
+    
+</body>
+</html>
